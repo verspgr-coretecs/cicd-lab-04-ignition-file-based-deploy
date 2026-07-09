@@ -58,8 +58,17 @@
   "designerPermissions": {
     "securityLevels": [
       {
-        "children": [],
-        "description": "Represents a user who has been authenticated by the system.",
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "name": "Administrator"
+              }
+            ],
+            "name": "Roles"
+          }
+        ],
         "name": "Authenticated"
       }
     ],
@@ -98,8 +107,8 @@
     ],
     "type": "AnyOf"
   },
-  "systemAuthProfile": "default",
-  "systemIdentityProvider": "default",
+  "systemAuthProfile": "temp",
+  "systemIdentityProvider": "temp",
   "userInactivityTimeout": 10,
   "writePermissions": {
     "securityLevels": [
